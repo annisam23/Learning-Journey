@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        function createAdder(value) {
+            const own = "ica";
+            function add(params) {
+                console.info (own);
+                return value + params;
+                
+            }
+            return add;
+        }
+        
+        const addTwo = createAdder(2);
+        console.info(addTwo(10));
+        console.info(addTwo(20));
+        //seakan akan bikin kaya gini
+        //function addTwo(param){
+        //     console.info("eko");
+        //     return 2 + params;
+        // }
+        
+    </script>
+</body>
+</html>

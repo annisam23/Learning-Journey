@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+<body>
+    <script>
+        const person = {
+            nama:"ani",
+            kuliah:"STTNF",
+            jurusan:"Informatika"
+        }
+        //sebelumnya
+        // console.info(person.nama);
+        // console.info(person.kuliah);
+        // console.info(person.jurusan)
+
+        //dengan with jadi lebih mudah
+        //tapi tdk direkomendasikan
+        //dan membuat ambigu
+        with(person){
+            console.log(nama);
+            console.log(jurusan);
+            console.log(kuliah)
+        }
+    </script>
+</body>
+</html>

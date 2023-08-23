@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    <script>
+        //rest parameter
+        //hanya ada satu di function
+        //hanya boleh diakhir
+        //rest parameter bisa disebut variable argument
+        
+        function sum(params,...data) {
+            let total = 0;
+            for (const itung of data) {
+                total+= itung;
+            }
+            document.writeln(`total ${params} is ${total}`)
+        }
+
+        sum("orange",1,2,3,5,8,9);
+
+        const values = [10,10,20,20,30,90]
+        //spread syntax
+        sum("test",...values)
+
+
+        
+        //arguments object
+
+        function oldSum() {
+            let total = 0;
+            for (const itung of arguments) {
+                total+= itung;
+            }
+            document.writeln(`total ${total}`)
+        }
+
+        oldSum(1,2,3,4,5,6,7,8,9)
+    
+    </script>
+</body>
+</html>

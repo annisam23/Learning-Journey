@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function return value</title>
+</head>
+<body>
+    <script>
+        function sayHiname(params) {
+                const say = `hello ${params}`;
+                return say;
+        }
+        const result = sayHiname("coy");
+        document.writeln(result)
+
+
+        function getFinal(value) {
+            if (value > 90) {
+                return "a";
+            }else if(value > 80){
+                return"b";
+            }else{
+                return"blm berhasil";
+            }
+        }
+
+        const finalValue = getFinal(70);
+        document.writeln(finalValue);
+
+
+        function iscontains(array,seardh) {
+            for(const element of array){
+                if(element === seardh){
+                    return true;
+                }
+            }
+            return false;
+        }
+        const array = [1,2,3,68,64,853,23];
+        const seardh = 1;
+        const found = iscontains(array,seardh)
+        document.writeln(found)
+    </script>
+</body>
+</html>

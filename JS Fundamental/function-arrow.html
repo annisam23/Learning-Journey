@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Arrow</title>
+</head>
+<body>
+    <script>
+        //arrow function
+        // const sayHello = (name) => {
+        //     const say = `Hello ${name}`;
+        //     console.info(say);
+        // }
+        // sayHello("nisa");
+
+        //dgn arrow function bisa lebih singkt kodenya kalo hanya 1 baris
+        //kode tanpa kurung parameter
+        //const sayHello = (name) => console.info(`Hello ${name}`);
+        const sayHello = name => console.info(`Hello ${name}`);
+        sayHello("ani");
+
+        //contoh lain
+        // const sum = (first,second) => {
+        //     return first + second;
+        // }
+        // console.log(sum(100,200))
+
+        //yg lebih singkat 
+        const sum=(first,second)=>first+second;
+        console.log(sum(100,200))
+
+        function givemename(params) {
+            params("nisa")
+        }
+
+        //arrow function
+        givemename(name => console.info(`hai ${name}`))
+    </script>
+</body>
+</html>

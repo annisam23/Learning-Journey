@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika non boolean</title>
+</head>
+<body>
+    <script>
+        //operator OR
+        console.info("hello" || ""); //"hello"->truthy
+        console.info(""||[]);// [] -> truthy
+        console.info("0"||"NOL")//"0"-> yang pertama truthy
+        console.info(0||"nol")//yg keluar yg truthy
+        console.info(null||"NULL");//"NULL"
+        console.info(0||false);//false->yg falsy terakhir
+
+        const org = {
+            fName : "",
+            lName : "maul"
+        }
+
+        const nama = org.fName || org.lName;
+        console.info(nama)
+
+        //operator and
+        console.info("hello" && ""); // falsy
+        console.info(''&&[])//""->falsy
+        console.info("nul"&&"nol");//"nol"->karena gaada falsy jadi ngambil truthy yg akhir
+        
+    </script>
+</body>
+</html>

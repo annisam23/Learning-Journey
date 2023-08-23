@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish</title>
+</head>
+<body>
+    <script>
+        //nullist = null dan undefined
+        //mirip seperti ternary tetapi yg membedakan pada kondisi null atau undefined yg diambil defaul valuenya
+
+        //penulisan salah
+        let parameter;
+
+        let data = parameter;
+        if(data === undefined || data === null){
+            data="nilai default"
+        }
+
+        document.writeln(data);
+
+        
+        //penulisan benar
+        data = parameter ?? "NIlai default";
+        document.writeln(data);
+    </script>
+</body>
+</html>

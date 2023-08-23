@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //conctructor function
+        //nama function diawali dengan huruf kapital
+
+        //nambah parameter didalam class
+        function Person(firstName,lastName){
+            //menambah properti di dalam constractor function
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function(params) {
+                console.info(`Hello ${params}  my name is ${this.firstName}`)
+            }
+        }
+
+        //object
+        const eko = new Person("eko","khaneddy");
+        eko.sayHello("joko")
+
+        const budi = new Person("budi","anto");
+        budi.sayHello("joko")
+        
+
+        console.log(eko);
+        console.log(budi)
+    </script>
+</body>
+</html>

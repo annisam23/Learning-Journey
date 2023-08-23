@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        const orang = {};
+
+        //menambah atau mengubah
+        orang["nama"] = "annisa mau";
+        orang["alamat"] = "indonesia";
+        orang["umur"] = 20;
+        //console.table(orang)
+
+        //menghapus
+        //delete orang["umur"];
+
+        //langsung set properti
+        const person = {
+            nama:"ani",
+            kuliah:"STTNF",
+            jurusan:"Informatika"
+        }
+
+        console.table(person)
+
+        //mengakses properti object
+        console.info(`Nama : ${person.nama}`);
+    </script>
+</body>
+</html>

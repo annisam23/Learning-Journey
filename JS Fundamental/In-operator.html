@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In operator</title>
+</head>
+<body>
+    <script>
+        //In operator hanya akan mengecek apakah sebuah property atau index ada atau tdk
+        //jadi walau nilai index null/undefined maka akan ttp ada
+        const person = {
+            firstNa : "caw",
+            lastNa : "coycoy"
+        }
+
+        if("firstNa" in person){
+            alert(`hello ${person.firstNa}`);
+        }else{
+            alert("gaada");
+        }
+        const person1 = {
+            firstNa : "caw",
+            lastNa : undefined
+                }
+
+        if("lastNa" in person1){
+            alert(`hai ${person1.lastNa}`);
+        } else{
+            alert("hadeuh")
+        }
+    </script>
+</body>
+</html>
